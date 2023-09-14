@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/Users/simran/Desktop/skaur52/ece163/Display/vehicleTrimWidget.py", line 153, in trimCalculated
+    self.callBack(**parametersDict)
+  File "/Users/simran/Desktop/skaur52/Chapter5.py", line 105, in trimCalcComplete
+    self.ResetSimulation()
+  File "/Users/simran/Desktop/skaur52/ece163/Display/baseInterface.py", line 246, in ResetSimulation
+    self.resetSimulationActions()
+  File "/Users/simran/Desktop/skaur52/Chapter5.py", line 98, in resetSimulationActions
+    self.vehicleInstance.reset(self.simulateInstance.underlyingModel.getVehicleState())
+  File "/Users/simran/Desktop/skaur52/ece163/Display/vehicleDisplay.py", line 227, in reset
+    self.updateVehiclePosition(resetState)
+  File "/Users/simran/Desktop/skaur52/ece163/Display/vehicleDisplay.py", line 146, in updateVehiclePosition
+    self.updateVehiclePositionSignal.emit([newState.pn, newState.pe, newState.pd, newState.yaw, newState.pitch, newState.roll])
+AttributeError: type object 'vehicleState' has no attribute 'pn'
